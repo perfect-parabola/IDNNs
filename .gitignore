@@ -7,3 +7,4 @@ idnns/__pycache__/
 /figure.jpg
 /jobs/
 /myenv/
+*.pyc

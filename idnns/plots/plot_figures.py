@@ -72,7 +72,7 @@ def plot_all_epochs(gen_data, I_XT_array, I_TY_array, axes, epochsInds, f, index
     #Save the figure and add color bar
     if index_i ==axes.shape[0]-1 and index_j ==axes.shape[1]-1:
         utils.create_color_bar(f, cmap, colorbar_axis, bar_font, epochsInds, title='Epochs')
-        f.savefig(save_name+'.jpg', dpi=500, format='jpg')
+        f.savefig(save_name+'.png', dpi=500, format='png')
 
 
 def plot_by_training_samples(I_XT_array, I_TY_array, axes, epochsInds, f, index_i, index_j, size_ind, font_size, y_ticks, x_ticks, colorbar_axis, title_str, axis_font, bar_font, save_name, samples_labels):

@@ -88,6 +88,7 @@ class informationNetwork():
 
 	def run_network(self):
 		"""Train and calculated the network's information"""
+		print("CPU num:"+str(NUM_CORES))
 		if self.run_in_parallel:
 			results = Parallel(n_jobs=NUM_CORES)(delayed(nn.train_network)
 			                                     (self.layers_sizes[j],

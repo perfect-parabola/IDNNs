@@ -19,7 +19,9 @@ def load_data(name, random_labels=False):
 		data_sets_temp = input_data.read_data_sets(os.path.join(os.path.dirname(sys.argv[0]), "data/MNIST_data/"),
 												   one_hot=True)
 		data_sets.data = np.concatenate((data_sets_temp.train.images, data_sets_temp.test.images), axis=0)
+		print(data_sets.data.shape)
 		data_sets.labels = np.concatenate((data_sets_temp.train.labels, data_sets_temp.test.labels), axis=0)
+		print(data_sets.labels.shape)
 	else:
 		d = sio.loadmat(os.path.join(os.path.dirname(sys.argv[0]), name + '.mat'))
 		F = d['F']

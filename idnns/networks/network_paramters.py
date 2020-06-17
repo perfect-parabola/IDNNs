@@ -84,7 +84,7 @@ def get_default_parser(num_of_samples=None):
 						help='The number of bins that we divide the output of the neurons')
 
 	parser.add_argument('-activation_function',
-						'-af', dest="activation_function", default=0, type=int,
+						'-af', dest="activation_function", default=1, type=int,
 						help='The activation function of the model 0 for thnh 1 for RelU')
 
 	parser.add_argument('-iad', dest="interval_accuracy_display", default=10, type=int,

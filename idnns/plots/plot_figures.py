@@ -474,6 +474,7 @@ def update_axes(axes, xlabel, ylabel, xlim, ylim, title, xscale, yscale, x_ticks
 
 
 def extract_array(data, name):
+    print(data.shape)
     results = [[data[j,k][name] for k in range(data.shape[1])] for j in range(data.shape[0])]
     return results
 

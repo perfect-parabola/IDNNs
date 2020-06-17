@@ -31,15 +31,15 @@ def get_default_parser(num_of_samples=None):
 						type=int, help='The number of times to run the network')
 
 	parser.add_argument('-num_epochs',
-						'-e', dest="num_ephocs", default=81,
+						'-e', dest="num_ephocs", default=1000,
 						type=int, help='max number of epochs')
 
 	parser.add_argument('-net',
-						'-n', dest="net_type", default='7',
+						'-n', dest="net_type", default='3',
 						help='The architecture of the networks')
 
 	parser.add_argument('-inds',
-						'-i', dest="inds", default='[85]',
+						'-i', dest="inds", default='[15]',
 						help='The percent of the training data')
 
 	parser.add_argument('-name',
@@ -87,11 +87,11 @@ def get_default_parser(num_of_samples=None):
 						'-af', dest="activation_function", default=0, type=int,
 						help='The activation function of the model 0 for thnh 1 for RelU')
 
-	parser.add_argument('-iad', dest="interval_accuracy_display", default=499, type=int,
+	parser.add_argument('-iad', dest="interval_accuracy_display", default=10, type=int,
 						help='The interval for display accuracy')
 
 	parser.add_argument('-interval_information_display',
-						'-iid', dest="interval_information_display", default=30, type=int,
+						'-iid', dest="interval_information_display", default=1, type=int,
 						help='The interval for display the information calculation')
 
 	parser.add_argument('-cov_net',
